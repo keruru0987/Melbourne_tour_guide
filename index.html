@@ -166,7 +166,6 @@ Immerse yourself in truly Big Nature, from the wild and unpredictable Southern O
         </div>
     </section>
 
-
     <!-- Section: Gallery -->
     <section id="gallery" class="section section-gallery scrollspy">
         <div class="container">
@@ -289,12 +288,7 @@ Immerse yourself in truly Big Nature, from the wild and unpredictable Southern O
         </div>
     </section>
 
-
-
-
-
     <!-- Footer -->
-
     <footer class="section black darken-2 white-text center">
         <p class="flow-text">Welcome come to Melbourne, have fun!</p>
         <div>
@@ -308,6 +302,26 @@ Immerse yourself in truly Big Nature, from the wild and unpredictable Southern O
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <script src="./assets/webpage.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
 
 </body>
 
