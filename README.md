@@ -1,6 +1,14 @@
+## About this project
+This is a website used for melbourne tourists.
+There are four main parts in this website:
+- Main page
+- Place of Interest(poi)
+- traffic
+- food and hotel
+
 ## How to run
 
-- open cmd in PC
+- open terminal in PC
 - cd into project
 - run command: python -m http.server
 - visit URL: http://localhost:8000
@@ -29,5 +37,5 @@
 
 ## GitHub URL
 
-https://github.com/keruru0987/IV_A3
+https://github.com/keruru0987/Melbourne_tour_guide
 
